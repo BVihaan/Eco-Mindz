@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+</style>
+</head>
+<body>
+<!-- Startup Screen -->
+<div id="startup-screen" class="startup-screen">
+<h1>Welcome to the Eco Quiz!</h1>
+<p>Test your knowledge on climate change and sustainability.</p>
+<button id="start-button" class="start-button">Start Quiz</button>
+</div>
+
+<script>
+// Hide the startup screen and show the quiz content when the start button is clicked
+document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("startup-screen").style.display = "none"; // Hide startup screen
+    document.getElementById("quiz-container").style.display = "block"; // Show quiz content
+});
+</script>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylestart.css">
+</head>
+<body>
+    <div id="game">
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="quiz-container">
+            <h1>Climate Change Quiz</h1>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="feedback"></div>
+            <button id="next-btn">Next Question</button>
+        </div>
+    </div>
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+<!-- Background music element -->
+<audio id="background-music" src="backgroundmusic.mp3" loop></audio>
+
+<!-- Mute and unmute buttons -->
+<button id="mute-button">🔇 Mute</button>
+<button id="unmute-button" style="display:none;">🔊 Unmute</button>
+    <script src="script.js"></script>
+
+</body>
+</html>

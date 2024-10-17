@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightseagreen;
+    color: #333;
+}
+
+#game {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #b2dfdb;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #00796b;
+    transition: width 0.5s;
+}
+
+#quiz-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#options button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00796b;
+    color: #fff;
+    cursor: pointer;
+}
+
+#options button:hover {
+    background-color: #004d40;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00796b;
+    color: #fff;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background-color: #004d40;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#mute-button, #unmute-button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
