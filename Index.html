@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen">
+        <h1>🌍 Welcome to the Eco Quiz! 🌱</h1>
+        <img src="climatechange.webp" alt="Eco Quiz GIF" class="start-gif">
+        <p>Enter your name to begin your journey:</p>
+        <input type="text" id="username" placeholder="Your Name">
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen" style="display: none;">
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="quiz-container">
+            <h1 id="question">Question goes here</h1>
+            <div id="options"></div>
+            <div id="feedback"></div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+    </div>
+
+    <!-- Play Again Screen -->
+    <div id="end-screen" class="screen" style="display: none;">
+        <h1 id="end-message">Great Job!</h1>
+        <p id="final-score">Your final score: 0/0</p>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+    <!-- Audio Controls -->
+    <button id="mute-btn">🔇 Mute</button>
+    <button id="unmute-btn" style="display: none;">🔊 Unmute</button>
+    <audio id="background-music" src="backgroundmusic.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
